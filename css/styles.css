@@ -119,6 +119,7 @@ footer {
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-weight: 500;
+    display: inline-block;
 }
 
 
@@ -137,6 +138,7 @@ footer {
     color: var(--slate);
     line-height: 1.5;
     letter-spacing: 0.02em;
+    display: inline-block;
 }
 
 .link:active{
