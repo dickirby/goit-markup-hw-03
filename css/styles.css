@@ -56,7 +56,7 @@ img {
 
         align-items: center;
         justify-content: space-between;
-        padding: 24px 0;
+        padding: 0 15px;
 
     }
     .header-address {
@@ -71,6 +71,7 @@ button {
 }
 .link {
     text-decoration: none;
+    display: inline-block;
 }
 address {
     font-style: normal;
