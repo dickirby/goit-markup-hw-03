@@ -99,7 +99,7 @@ footer {
 
 
 .link-logo {
-    display: inline-flex;
+    display: inline-block;
     font-family: "Raleway", sans-serif;
     color: var(--iris);
     text-transform: uppercase;
