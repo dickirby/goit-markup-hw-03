@@ -14,6 +14,51 @@ body {
     color: #434455;
     background-color: var(--white);
 }
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    padding: 0;
+    margin: 0;
+}
+
+
+img {
+    display: block;
+}
+
+.page-header {
+    
+}
+
+.container { 
+    max-width: 1158px;
+    padding-left:  15px;
+    padding-right:  15px;
+    margin-left: auto;  
+    margin-right:  auto;
+    }
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px 0;
+
+    }
+    
 button {
     font-family: "Roboto", sans-serif;
 }
@@ -31,6 +76,10 @@ button {
     cursor: pointer;
 }
 
+nav {
+    display: flex;
+}
+
 button:hover, button:focus {
     background-color: var(--ocean);
 }
@@ -41,6 +90,7 @@ footer {
 
 
 .link-logo {
+    display: inline-flex;
     font-family: "Raleway", sans-serif;
     color: var(--iris);
     text-transform: uppercase;
@@ -48,6 +98,7 @@ footer {
     font-weight: 800;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    margin-right: 76px;
 }
 
 .logo-style {
@@ -62,6 +113,16 @@ footer {
 }
 
 
+
+.list-nav {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding-left: 0; 
+       
+ 
+    
+}
 
 .list-contacts .link {
     color: var(--slate);
@@ -79,6 +140,7 @@ footer {
 
 .hero {
     background-color: var(--navyblue);
+    display: flex;
 }
 .hero-text {
     color: var(--white);
@@ -86,6 +148,9 @@ footer {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+    padding-top: 188px;
+    width: 496px;
+    padding-bottom: 48px;
 }
 
 .hero-button {
@@ -95,7 +160,25 @@ footer {
     line-height: 1.5;
     letter-spacing: 0.04em;
     font-size: 16px;
+    display: block;
+padding: 16px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 188px;
+
     
+}
+
+.abilities-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+    margin-top: 120px;
+}
+
+.abilities-list-item {
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .main-header {
@@ -104,12 +187,27 @@ footer {
     line-height: 1.2;
     letter-spacing: 0.02em;
     font-weight: 500;
+    margin-bottom: 8px;
+}
+.list-contacts {
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    
+    
 }
 
 .list-item {
     background-color: var(--white);
 }
 
+.photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 120px;
+}
 .main-text {
     color: var(--slate);
     font-size: 16px;
@@ -124,13 +222,25 @@ footer {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
-    font-weight: 700
+    font-weight: 700;
+    margin-bottom: 72px;
 }
 
 .our-team {
     background-color: var(--cloud);
 }
 
+.h-our-team {
+    padding-top: 120px;
+}
+
+.our-team-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-bottom: 120px;
+    flex-basis: calc((100% - 72px) / 4);
+}
 .our-team-card-names {
     color: var(--navyblue);
     font-size: 20px;
@@ -138,6 +248,7 @@ footer {
     letter-spacing: 0.02em;
     text-align: center;
     font-weight: 500;
+    padding-top: 32px;
 }
 .our-team-card-role {
     color: var(--slate);
@@ -145,6 +256,7 @@ footer {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    padding-bottom: 32px;
 }
 
 .footer-text {
@@ -152,8 +264,22 @@ footer {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
+    margin-top: 16px;
 }
 
+.page-footer {
+    padding-top: 101.5px;
+    padding-bottom: 100px;
+}
+
+.footer-container{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 156px;
+}
 .logo-style-footer {
     color: var(--cloud);
     font-family: "Raleway", sans-serif;
