@@ -26,7 +26,7 @@ img {
 }
 
 .page-header {
-    justify-content:;
+    border-bottom: 1px solid #e7e9fc
 }
 
 .container { 
@@ -35,6 +35,7 @@ img {
     padding-right:  15px;
     margin-left: auto;  
     margin-right:  auto;
+    padding: 0 15px 0 15px;
     }
 
     .visually-hidden {
@@ -58,6 +59,12 @@ img {
         padding: 24px 0;
 
     }
+    .header-address {
+        gap: 40px;
+    }
+    .list-nav-items {
+        padding: 24px 0;
+    }
     
 button {
     font-family: "Roboto", sans-serif;
@@ -78,6 +85,7 @@ button {
 
 nav {
     display: flex;
+    align-items: center;
 }
 
 button:hover, button:focus {
@@ -141,6 +149,7 @@ footer {
 .hero {
     background-color: var(--navyblue);
     display: flex;
+    padding: 188px 0;
 }
 .hero-text {
     color: var(--white);
@@ -148,9 +157,9 @@ footer {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    padding-top: 188px;
     width: 496px;
     padding-bottom: 48px;
+    max-width: 496px;
 }
 
 .hero-button {
@@ -164,17 +173,22 @@ footer {
 padding: 16px 32px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 188px;
+    min-width: 169px;
+    height: 56px;
+    border: none; 
+    border-radius: 4px; 
 
     
 }
 
+.section-abilities {
+    padding: 120px 0;
+}
 .abilities-list {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
-    margin-bottom: 120px;
-    margin-top: 120px;
+
 }
 
 .abilities-list-item {
@@ -188,6 +202,7 @@ padding: 16px 32px;
     letter-spacing: 0.02em;
     font-weight: 500;
     margin-bottom: 8px;
+    
 }
 .list-contacts {
 
@@ -200,13 +215,17 @@ padding: 16px 32px;
 
 .list-item {
     background-color: var(--white);
+    border-radius: 0px 0px 4px 4px; 
+}
+
+.section-photos {
+    padding-bottom: 120px;
 }
 
 .photo-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    margin-bottom: 120px;
 }
 .main-text {
     color: var(--slate);
@@ -228,18 +247,21 @@ padding: 16px 32px;
 
 .our-team {
     background-color: var(--cloud);
+    padding: 120px 0;
 }
 
 .h-our-team {
-    padding-top: 120px;
 }
 
 .our-team-list{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    padding-bottom: 120px;
     flex-basis: calc((100% - 72px) / 4);
+}
+
+.name-role {
+    padding: 32px 0;
 }
 .our-team-card-names {
     color: var(--navyblue);
@@ -248,7 +270,6 @@ padding: 16px 32px;
     letter-spacing: 0.02em;
     text-align: center;
     font-weight: 500;
-    padding-top: 32px;
 }
 .our-team-card-role {
     color: var(--slate);
@@ -256,7 +277,6 @@ padding: 16px 32px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    padding-bottom: 32px;
 }
 
 .footer-text {
@@ -265,14 +285,19 @@ padding: 16px 32px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
-    margin-top: 16px;
+ 
 }
 
 .page-footer {
     padding-top: 101.5px;
-    padding-bottom: 100px;
     justify-content: flex-start;
+    padding: 100px 0;
    
+}
+
+.link-logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-container{
@@ -296,10 +321,13 @@ padding: 16px 32px;
     padding: 12px 24px;
 justify-content: center;
 align-items: center;
+border: 1px solid #e7e9fc;
+border-radius: 4px; 
 }
 
 .portfolio-button:hover , .portfolio-button:focus{
     color: var(--white);
+    border: 1px solid transparent;
 }
 .portfolio-header {
     color: var(--navyblue);
@@ -308,6 +336,7 @@ align-items: center;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-top: 32px;
+    margin-bottom: 8px;
 }
 
 .portfolio-paragraph {
@@ -316,24 +345,32 @@ align-items: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 32px;
-    margin-top: 8px;
+}
+
+.portfolio-section {
+    padding-top: 96px; padding-bottom: 120px;
 }
 
 .portfolio-list-images-item {
-    margin-bottom: 48px;
+
 }
 
 .portfolio-list {
     display: flex;
     gap: 24px;
     justify-content: center;
-    padding-top: 96px;
     margin-bottom: 72px;
 }
 
+.name-category {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc; 
+    border-top: none; 
+}
 .portfolio-list-images {
     display: flex;
     flex-wrap: wrap;
     flex-basis: calc((100% - 144px) / 9);
     gap: 24px;
+    row-gap: 48px; 
 }

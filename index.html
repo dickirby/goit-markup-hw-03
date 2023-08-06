@@ -23,7 +23,7 @@
     <header class="page-header">
       <div class="container header-container">
         <!-- LOGO -->
-        <nav>
+        <nav class="header-nav">
           <a href="./index.html" class="link link-logo"
             >Web<span class="logo-style">Studio</span>
           </a>
@@ -31,21 +31,29 @@
           <!-- NAVIGATION -->
 
           <ul class="list list-nav">
-            <li><a href="./index.html" class="link">Studio</a></li>
-            <li><a href="./portfolio.html" class="link">Portfolio</a></li>
-            <li><a href="" class="link">Contacts</a></li>
+            <li>
+              <a href="./index.html" class="link list-nav-items">Studio</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link list-nav-items"
+                >Portfolio</a
+              >
+            </li>
+            <li><a href="" class="link list-nav-items">Contacts</a></li>
           </ul>
         </nav>
         <!-- CONTACTS -->
         <address class="header-address">
           <ul class="list list-contacts">
             <li>
-              <a href="mailto:info@devstudio.com" class="link"
+              <a href="mailto:info@devstudio.com" class="link list-nav-items"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+              <a href="tel:+110001111111" class="link list-nav-items"
+                >+11 (000) 111-11-11</a
+              >
             </li>
           </ul>
         </address>
@@ -59,9 +67,9 @@
           <button type="button" class="hero-button">Order Service</button>
         </div>
       </section>
-      <section>
+      <section class="section-abilities">
         <div class="container">
-          <h2 hidden>Abilities</h2>
+          <h2 class="visually-hidden">Abilities</h2>
           <ul class="list abilities-list">
             <li class="abilities-list-item">
               <h3 class="main-header">Strategy</h3>
@@ -94,11 +102,11 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section class="section-photos">
         <div class="container">
           <h2 class="h-two-headers">What are we doing</h2>
           <ul class="list photo-list">
-            <li>
+            <li class="photo-list-items">
               <img
                 src="./images/block1-1.jpg"
                 width="360"
@@ -106,7 +114,7 @@
                 alt="Computer"
               />
             </li>
-            <li>
+            <li class="photo-list-items">
               <img
                 src="./images/block1-2.jpg"
                 width="360"
@@ -114,7 +122,7 @@
                 alt="Phone"
               />
             </li>
-            <li>
+            <li class="photo-list-items">
               <img
                 src="./images/block1-3.jpg"
                 width="360"
@@ -136,8 +144,10 @@
                 height="260"
                 alt="Mark Guerrero"
               />
-              <h3 class="our-team-card-names">Mark Guerrero</h3>
-              <p class="our-team-card-role">Product Designer</p>
+              <div class="name-role">
+                <h3 class="our-team-card-names">Mark Guerrero</h3>
+                <p class="our-team-card-role">Product Designer</p>
+              </div>
             </li>
             <li class="list-item">
               <img
@@ -146,8 +156,10 @@
                 height="260"
                 alt="Tom Ford"
               />
-              <h3 class="our-team-card-names">Tom Ford</h3>
-              <p class="our-team-card-role">Frontend Developer</p>
+              <div class="name-role">
+                <h3 class="our-team-card-names">Tom Ford</h3>
+                <p class="our-team-card-role">Frontend Developer</p>
+              </div>
             </li>
             <li class="list-item">
               <img
@@ -156,8 +168,10 @@
                 height="260"
                 alt="Camila Garcia"
               />
-              <h3 class="our-team-card-names">Camila Garcia</h3>
-              <p class="our-team-card-role">Marketing</p>
+              <div class="name-role">
+                <h3 class="our-team-card-names">Camila Garcia</h3>
+                <p class="our-team-card-role">Marketing</p>
+              </div>
             </li>
             <li class="list-item">
               <img
@@ -166,8 +180,10 @@
                 height="260"
                 alt="Daniel Wilson"
               />
-              <h3 class="our-team-card-names">Daniel Wilson</h3>
-              <p class="our-team-card-role">UI Designer</p>
+              <div class="name-role">
+                <h3 class="our-team-card-names">Daniel Wilson</h3>
+                <p class="our-team-card-role">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -175,7 +191,7 @@
     </main>
     <footer class="page-footer">
       <div class="container footer-container">
-        <a href="./index.html" class="link link-logo"
+        <a href="./index.html" class="link link-logo link-logo-footer"
           >Web<span class="logo-style-footer">Studio</span></a
         >
         <p class="footer-text">
